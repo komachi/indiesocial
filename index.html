@@ -5,7 +5,7 @@
 <title>IndieSocial</title>
 <link rel="stylesheet" href="css/fontello.css"><!--[if IE 7]>
 <link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
-<style type="text/css">#indiesocial-init > a {margin:3px;};</style>
+<style type="text/css">#indiesocial-init > a {margin:3px;} ul{margin:10px 0px;}</style>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -14,10 +14,8 @@
             <h1 style="font-size:50pt;">IndieSocial</h1>
             <hr>
             <p>JavaScript library which let you use social share links without foreign scripts. Control all your data, protect your privacy.</p>
-            <p class="download-info">
-                <a href="https://github.com/komachi/indiesocial" class="btn btn-primary btn-large">View project on GitHub</a>
-                <a href="https://github.com/fontello/brandico.font/zipball/master" class="btn btn-large">Download IndieSocial</a>
-            </p>
+            <a href="https://github.com/komachi/indiesocial" class="btn btn-primary btn-large">View project on GitHub</a>
+            <a href="https://github.com/fontello/brandico.font/zipball/master" class="btn btn-large">Download IndieSocial</a>
             <ul>
                 <li>Easy customizable with CSS and JS.</li>
                 <li>Works perfectly with <a href="http://fontello.com/">Fontello</a>.</li>
@@ -53,6 +51,32 @@
                 <li><i class="icon-googleplus-rect"></i>Google+</li>
                 <li><i class="icon-yandex"></i>Ya.ru</li>
             </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span4">
+            <h2>CSS Customize</h2>
+            <ol>
+                <li>Every button is a <code>&lt;a></code> tag.</li>
+                <li>Every button has a class, name of class: <code>indiesocial-%nameofsocialnetwork%</code>.</li>
+                <li>Buttons can be styled any way.</li>
+            </ol>
+        </div>
+        <div class="span4">
+            <h2>Classes list</h2>
+            <ol>
+                <li><i class="icon-facebook"></i><code>indiesocial-facebook</code></li>
+                <li><i class="icon-twitter"></i><code>indiesocial-twitter</code></li>
+                <li><i class="icon-vkontakte-rect"></i><code>indiesocial-vk</code></li>
+                <li><i class="icon-odnoklassniki"></i><code>indiesocial-odnoklassniki</code></li>
+                <li><i class="icon-googleplus-rect"></i><code>indiesocial-googleplus</code></li>
+                <li><i class="icon-yandex"></i><code>indiesocial-yaru</code></li>
+            </ol>
+        </div>
+        <div class="span4">
+            <h2>Use now</h2>
+            <textarea readonly cols="35" rows="7"><div id="indiesocial-init" data-indieSocialServices="facebook,twitter,vk,odnoklassniki,googleplus,yaru" data-addText="true"></div>
+<script type="text/javascript" src="https://raw.github.com/komachi/indiesocial/master/indiesocial.min.js"></script></textarea>
         </div>
     </div>
     <footer class="span12" style="text-align:center;margin-top:30px;">Share: <span id="indiesocial-init" data-indieSocialServices="facebook,twitter,vk,odnoklassniki,googleplus,yaru" data-addFontelloIcon="true" data-URL="http://indiesocial.github.com" data-addText="true"></span></footer>
