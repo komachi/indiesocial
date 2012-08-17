@@ -6,7 +6,7 @@ JavaScript library which let you use social share links without foreign scripts.
 * Less than 3 kB.
 
 ## How to use
-1. Include indiesocial.js near </body>.
+1. Include indiesocial.js near &lt;/body>.
 2. Place element with id="indiesocial-init" where you want see buttons.
 3. Configure it.
 
