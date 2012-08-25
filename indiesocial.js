@@ -77,7 +77,7 @@ function indiesocialMakeLink(service) {
     if (indiesocialServices[service]['title'] !== undefined && init.getAttribute("data-title")) {
          var titlelink = indiesocialServices[service]['title'] + init.getAttribute("data-title");
     }
-    aElement.setAttribute("href", URL + titlelink);
+    aElement.setAttribute("href", encodeURI(URL + titlelink));
     aElement.setAttribute("class", "indiesocial-" + service);
     aElement.setAttribute("title", indiesocialServices[service]['name']);
     aElement.setAttribute("target", "_blank");
