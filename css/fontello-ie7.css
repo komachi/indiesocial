@@ -15,3 +15,7 @@
 .icon-googleplus-rect { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf309;&nbsp;'); }
 .icon-vkontakte-rect { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf30a;&nbsp;'); }
 .icon-odnoklassniki { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf30c;&nbsp;'); }
+.icon-tumblr { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf311;&nbsp;'); }
+.icon-friendfeed { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf312;&nbsp;'); }
+.icon-blogger { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf314;&nbsp;'); }
+.icon-linkedin { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf31a;&nbsp;'); }
