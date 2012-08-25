@@ -22,7 +22,7 @@
 /* fix buttons height */
   line-height: 1em;
 /* you can be more comfortable with increased icons size */
-/* font-zize: 120%; */
+/* font-size: 120%; */
 }
 
 .icon-facebook:before { content: '\f300'; } /* '' */
@@ -31,3 +31,7 @@
 .icon-googleplus-rect:before { content: '\f309'; } /* '' */
 .icon-vkontakte-rect:before { content: '\f30a'; } /* '' */
 .icon-odnoklassniki:before { content: '\f30c'; } /* '' */
+.icon-tumblr:before { content: '\f311'; } /* '' */
+.icon-friendfeed:before { content: '\f312'; } /* '' */
+.icon-blogger:before { content: '\f314'; } /* '' */
+.icon-linkedin:before { content: '\f31a'; } /* '' */

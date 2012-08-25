@@ -17,9 +17,11 @@
             <a href="https://github.com/komachi/indiesocial" class="btn btn-primary btn-large">View project on GitHub</a>
             <a href="https://github.com/fontello/brandico.font/zipball/master" class="btn btn-large">Download IndieSocial</a>
             <ul>
+                <li>Without foreign scripts.</li>
                 <li>Easy customizable with CSS and JS.</li>
                 <li>Works perfectly with <a href="http://fontello.com/">Fontello</a>.</li>
-                <li>Released under <a href="http://opensource.org/licenses/BSD-3-Clause">New BSD License</a>.</li>
+                <li>Released under <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license">CC0 License (Public Domain)</a>.</li>
+                <li>Working in all browsers.</li>
                 <li>Less than 3 kB.</li>
             </ul>
     </div>
@@ -35,10 +37,11 @@
         <div class="span4">
             <h2>Parameters</h2>
             <ol>
-                <li>Enable social share links: <code>data-indieSocialServices</code>. Possible values, comma separated: <code>facebook</code>, <code>twitter</code>, <code>vk</code>, <code>odnoklassniki</code>, <code>googleplus</code>, <code>yaru</code>.</li>
+                <li>Enable social share links: <code>data-indieSocialServices</code>. Possible values, comma separated: <code>facebook</code>, <code>twitter</code>, <code>vk</code>, <code>odnoklassniki</code>, <code>googleplus</code>, <code>yaru</code>, <code>friendfeed</code>, <code>linkedin</code>, <code>tumblr</code>, <code>blogger</code>.</li>
                 <li>Add Fontello icons to share links: <code>data-addFontelloIcon</code> Possible values: <code>true</code> or <code>false</code>. Default: <code>false</code>.</li>
                 <li>Add text to share links: <code>data-addText</code> Possible values: <code>true</code> or <code>false</code>. Default: <code>false</code>.</li>
                 <li>Set URL for share: <code>data-URL</code>. Default: <code>window.location</code>.</li>
+                <li>Set title: <code>data-title</code>. Not work with Google+, use <a href="http://ogp.me/">OpenGraph</a>.</li>
             </ol>
         </div>
         <div class="span4">
@@ -50,6 +53,10 @@
                 <li><i class="icon-odnoklassniki"></i>Odnoklassniki</li>
                 <li><i class="icon-googleplus-rect"></i>Google+</li>
                 <li><i class="icon-yandex"></i>Ya.ru</li>
+                <li><i class="icon-friendfeed"></i>FrienFeed</li>
+                <li><i class="icon-linkedin"></i>LinkedIn</li>
+                <li><i class="icon-tumblr"></i>Tumblr</li>
+                <li><i class="icon-blogger"></i>Blogger</li>
             </ol>
         </div>
     </div>
@@ -71,15 +78,21 @@
                 <li><i class="icon-odnoklassniki"></i><code>indiesocial-odnoklassniki</code></li>
                 <li><i class="icon-googleplus-rect"></i><code>indiesocial-googleplus</code></li>
                 <li><i class="icon-yandex"></i><code>indiesocial-yaru</code></li>
+                <li><i class="icon-friendfeed"></i><code>indiesocial-friendfeed</code></li>
+                <li><i class="icon-linkedin"></i><code>indiesocial-linkedin</code></li>
+                <li><i class="icon-tumblr"></i><code>indiesocial-tumblr</code></li>
+                <li><i class="icon-blogger"></i><code>indiesocial-blogger</code></li>
             </ol>
         </div>
         <div class="span4">
             <h2>Use now</h2>
-            <textarea readonly cols="35" rows="7"><div id="indiesocial-init" data-indieSocialServices="facebook,twitter,vk,odnoklassniki,googleplus,yaru" data-addText="true"></div>
-<script type="text/javascript" src="https://raw.github.com/komachi/indiesocial/master/indiesocial.min.js"></script></textarea>
+            <textarea readonly cols="35" rows="10"><div id="indiesocial-init" data-indieSocialServices="facebook,twitter,vk,odnoklassniki,googleplus,yaru,frienfeed,linkedin,tumblr,blogger" data-addText="true"></div>
+<script type="text/javascript" src="https://raw.github.com/komachi/indiesocial/gh-pages/indiesocial.min.js"></script></textarea>
         </div>
     </div>
-    <footer class="span12" style="text-align:center;margin-top:30px;">Share: <span id="indiesocial-init" data-indieSocialServices="facebook,twitter,vk,odnoklassniki,googleplus,yaru" data-addFontelloIcon="true" data-URL="http://indiesocial.github.com" data-addText="true"></span></footer>
+    <footer class="span12" style="text-align:center;margin-top:30px;">
+        <div id="indiesocial-init" data-indieSocialServices="facebook,twitter,vk,odnoklassniki,googleplus,yaru,friendfeed,linkedin,tumblr,blogger" data-addFontelloIcon="true" data-URL="http://komachi.github.com/indiesocial" data-addText="true" data-title="IndieSocial social sharing JS library"></div>
+    </footer>
 <script type="text/javascript" src="./indiesocial.js"></script>
 </body>
 </html>
