@@ -1,0 +1,134 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <title>IndieSocial</title>
+    <link rel="stylesheet" href="css/fontello.css" /><!--[if IE 7]>
+    <link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+    <style type="text/css">#indiesocial-init > a {margin:3px;} #indiesocial-init {margin-bottom:10px;}</style>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="./indiesocial.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header text-center">
+        <h1>IndieSocial</h1>
+        <p>JavaScript library which let you use social share links without foreign scripts. Control all your data, protect your privacy.</p>
+        <a href="https://github.com/komachi/indiesocial" class="btn btn-primary btn-lg">View project on GitHub</a>
+        <a href="https://github.com/komachi/indiesocial/zipball/master" class="btn btn-lg">Download IndieSocial</a>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title">Privacy</h3>
+            </div>
+            <div class="panel-body">
+              IndieSocial doesn't require any foreign scripts. Don't let social services track data of your clients.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title">Size</h3>
+            </div>
+            <div class="panel-body">
+              IndieSocial is near 1 KB minified and gzipped. And doesn't require any other scripts (except <a href="http://fontello.com" targer="_blank">Fontello</a> if you want to use icons).
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title">Browser support</h3>
+            </div>
+            <div class="panel-body">
+              IndieSocial works everywhere. Even in IE6!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title">Customization</h3>
+            </div>
+            <div class="panel-body">
+              You can customize IndieSocial any way you want. Any button has a class called <code>indiesocial-*</code> where * is the name of social network.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title">Free and open source</h3>
+            </div>
+            <div class="panel-body">
+              Source code released under terms of <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license" target="_blank">Creative Commons Zero 1.0</a>.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title">Easy to use</h3>
+            </div>
+            <div class="panel-body">
+              Just load <code>indiesocial.js</code>, place <code>&lt;div id="indiesocial-init"&gt;&lt;/div&gt;</code> where you want to see buttons and configure it!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <h3 class="text-center">Configuration</h3>
+          <div class="well">
+            <p>Works with attributes.</p>
+            <p><code>data-indieSocialServices</code> contains enabled buttons. Set <code>all</code> for enabling all supported services or enter comma sepated list.</p>
+            <p>Set <code>data-addFontelloIcon</code> to <code>true</code> if you want use <a href="http://fontello.com" target="_blank">Fontello</a> icons.</p>
+            <p>Set <code>data-addText</code> to <code>true</code> if you want use text link.</p>
+            <p>Place URL in <code>data-URL</code>. By default <code>window.location</code></p>
+            <p>Set title: <code>data-title</code>. Not work with Google+, use <a href="http://ogp.me/" target="_blank">OpenGraph</a>.</p>
+          </div>
+        </div>
+        <div class="col-md-5 col-md-offset-2">
+          <h3 class="text-center">Supported services</h3>
+          <div class="well row">
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li><i class="icon-facebook"></i><code>facebook</code></li>
+                <li><i class="icon-twitter"></i><code>twitter</code></li>
+                <li><i class="icon-vkontakte-rect"></i><code>vk</code></li>
+                <li><i class="icon-odnoklassniki"></i><code>odnoklassniki</code></li>
+                <li><i class="icon-googleplus-rect"></i><code>googleplus</code></li>
+                <li><i class="icon-yandex"></i><code>yaru</code></li>
+                <li><i class="icon-friendfeed"></i><code>friendfeed</code></li>
+                <li><i class="icon-linkedin"></i><code>linkedin</code></li>
+                <li><i class="icon-tumblr"></i><code>tumblr</code></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li><i class="icon-blogger"></i><code>blogger</code></li>
+                <li><i class="icon-diigo"></i><code>diigo</code></li>
+                <li><i class="icon-reddit"></i><code>reddit</code></li>
+                <li><i class="icon-delicious"></i><code>delicious</code></li>
+                <li><i class="icon-digg"></i><code>digg</code></li>
+                <li><i class="icon-stumbleupon"></i><code>stumbleupon</code></li>
+                <li><i class="icon-pinterest"></i><code>pinterest</code></li>
+                <li><i class="icon-evernote"></i><code>evernote</code></li>
+                <li><i class="icon-instapaper"></i><code>instapaper</code></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="col-md-12 text-center">
+        <h5>Demo:</h5>
+        <div id="indiesocial-init" data-indieSocialServices="all" data-addFontelloIcon="true" data-URL="http://komachi.github.com/indiesocial" data-title="IndieSocial — simple social sharing JS library"></div>
+      </footer>
+    </div>
+  </body>
+</html>
