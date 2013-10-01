@@ -1,94 +1,143 @@
 /* IndieSocial
-An JavaScript library for making social sharing links without foreign scripts
-License: New BSD License, http://opensource.org/licenses/BSD-3-Clause 
+JavaScript library which provide social sharing links without foreign scripts
+License: CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/ 
 Repo: https://github.com/komachi/indiesocial */
-var indiesocialServices = {
+var services = {
     'facebook': {
         'URL': 'https://facebook.com/sharer.php?u=',
         'title' : '&t=',
-        'fontello': 'icon-facebook',
-        'name' : 'Facebook',
+        'fontello': 'facebook',
+        'name' : 'Facebook'
     },
     'twitter' : {
         'URL': 'https://twitter.com/share?url=',
         'title': '&text=',
-        'fontello': 'icon-twitter',
-        'name' : 'Twitter',
+        'fontello': 'twitter',
+        'name' : 'Twitter'
     },
     'vk' : {
         'URL': 'http://vk.com/share.php?url=',
-        'fontello': 'icon-vkontakte-rect',
+        'fontello': 'vkontakte-rect',
         'title' : '&title=',
-        'name' : 'VK',
+        'name' : 'VK'
     },
     'googleplus' : {
         'URL': 'https://plus.google.com/share?url=',
-        'fontello': 'icon-googleplus-rect',
-        'name' : 'Google+',
+        'fontello': 'googleplus-rect',
+        'name' : 'Google+'
     },
     'odnoklassniki' : {
         'URL': 'http://odnoklassniki.ru/dk?st.cmd=addShare&st._surl=',
         'title' : '&title=',
-        'fontello': 'icon-odnoklassniki',
-        'name' : 'Одноклассники',
+        'fontello': 'odnoklassniki',
+        'name' : 'Одноклассники'
     },
     'yaru' : {
         'URL': 'http://my.ya.ru/posts_add_link.xml?URL=',
         'title' : '&title=',
-        'fontello': 'icon-yandex',
-        'name' : 'Я.ру',
+        'fontello': 'yandex',
+        'name' : 'Я.ру'
     },
     'friendfeed' : {
         'URL': 'http://friendfeed.com/?url=',
         'title' : '&title=',
-        'fontello': 'icon-friendfeed',
-        'name' : 'FriendFeed',
+        'fontello': 'friendfeed',
+        'name' : 'FriendFeed'
     },
     'linkedin' : {
         'URL': 'http://linkedin.com/shareArticle?mini=true&url=',
         'title' : '&title=',
-        'fontello': 'icon-linkedin',
-        'name' : 'LinkedIn',
+        'fontello': 'linkedin',
+        'name' : 'LinkedIn'
     },
     'tumblr' : {
         'URL': 'http://tumblr.com/share/link?url=',
         'title' : '&name=',
-        'fontello': 'icon-tumblr',
-        'name' : 'Tumblr',
+        'fontello': 'tumblr',
+        'name' : 'Tumblr'
     },
     'blogger' : {
         'URL': 'http://blogger.com/blog_this.pyra?u=',
         'title' : '&n=',
-        'fontello': 'icon-blogger',
-        'name' : 'Blogger',
+        'fontello': 'blogger',
+        'name' : 'Blogger'
     },
+    'diigo' : {
+        'URL': 'https://www.diigo.com/post?url=',
+        'title' : '&title=',
+        'fontello': 'diigo',
+        'name' : 'Diigo'
+    },
+    'reddit' : {
+        'URL': 'http://reddit.com/submit?url=',
+        'title' : '&title=',
+        'fontello': 'reddit',
+        'name' : 'Reddit'
+    },
+    'delicious' : {
+        'URL': 'http://delicious.com/post/?url=',
+        'title' : '&title=',
+        'fontello': 'delicious',
+        'name' : 'Delicious'
+    },
+    'digg' : {
+        'URL': 'http://digg.com/submit?phase=2&url=',
+        'title' : '&title=',
+        'fontello': 'digg',
+        'name' : 'Digg'
+    },
+    'stumbleupon' : {
+        'URL': 'http://www.stumbleupon.com/submit?url=',
+        'title' : '&title=',
+        'fontello': 'stumbleupon',
+        'name' : 'StumbleUpon'
+    },
+    'pinterest' : {
+        'URL': 'http://pinterest.com/pin/create/link/?url=',
+        'title' : '&description=',
+        'fontello': 'pinterest',
+        'name' : 'Pinterest'
+    },
+    'evernote' : {
+        'URL': 'http://www.evernote.com/clip.action?url=',
+        'title' : '&title=',
+        'fontello': 'evernote',
+        'name' : 'Evernote'
+    },
+    'instapaper' : {
+        'URL': 'http://www.instapaper.com/edit?url=',
+        'title' : '&title=',
+        'fontello': 'instapaper',
+        'name' : 'Instapaper'
+    }
 };
 window.onload = function() {
-        for (var service in indiesocialServices) {
-        if (document.getElementById("indiesocial-init").getAttribute("data-indieSocialServices").indexOf(service) != '-1') {
-            var init = document.getElementById("indiesocial-init");
+    for (var service in services) {
+		var init = document.getElementById("indiesocial-init");
+		var initServices = init.getAttribute("data-indieSocialServices");
+        if (initServices.indexOf(service) != '-1' || initServices == 'all') {
             var aElement = document.createElement("a");
             init.appendChild(aElement);
             if (init.getAttribute("data-URL")) {
-                var URL = indiesocialServices[service]['URL'] + init.getAttribute("data-URL");
+                var URL = services[service]['URL'] + init.getAttribute("data-URL");
             }
             else {
-                var URL = indiesocialServices[service]['URL'] + window.location;
+                var URL = services[service]['URL'] + window.location;
             }
             var titlelink = "";
-            if (indiesocialServices[service]['title'] !== undefined && init.getAttribute("data-title")) {
-                 var titlelink = indiesocialServices[service]['title'] + init.getAttribute("data-title");
+            if (services[service]['title'] !== undefined && init.getAttribute("data-title")) {
+                 var titlelink = services[service]['title'] + init.getAttribute("data-title");
             }
             aElement.setAttribute("href", encodeURI(URL + titlelink));
             aElement.setAttribute("class", "indiesocial-" + service);
-            aElement.setAttribute("title", indiesocialServices[service]['name']);
+            aElement.setAttribute("title", services[service]['name']);
             aElement.setAttribute("target", "_blank");
             var innerValue = "";
             if (init.getAttribute("data-addFontelloIcon") == "true") {
-                var innerValue = innerValue + '<i class="' + indiesocialServices[service]['fontello'] + '"></i>';
+                var innerValue = innerValue + '<i class="icon-' + services[service]['fontello'] + '"></i>';
             }
             if (init.getAttribute("data-addText") == "true") {
-                var innerValue = innerValue + indiesocialServices[service]['name'];
+                var innerValue = innerValue + services[service]['name'];
             }
             aElement.innerHTML = innerValue;
         }
