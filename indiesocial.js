@@ -133,7 +133,7 @@ function indieSocial() {
       else {
         var URL = services[service]['URL'] + window.location;
       }
-      var titlelink;
+      var titlelink = "";
       if (services[service]['title'] !== undefined && init.getAttribute("data-title")) {
         var titlelink = services[service]['title'] + init.getAttribute("data-title");
       }
