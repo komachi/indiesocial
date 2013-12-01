@@ -50,21 +50,22 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-delicious:before { content: '\e80c'; } /* '' */
-.icon-stumbleupon:before { content: '\e80e'; } /* '' */
-.icon-pinterest:before { content: '\e80f'; } /* '' */
-.icon-digg:before { content: '\e80d'; } /* '' */
-.icon-reddit:before { content: '\e80b'; } /* '' */
-.icon-evernote:before { content: '\e810'; } /* '' */
-.icon-instapaper:before { content: '\e811'; } /* '' */
-.icon-facebook:before { content: '\e802'; } /* '' */
-.icon-twitter:before { content: '\e803'; } /* '' */
-.icon-yandex:before { content: '\e807'; } /* '' */
-.icon-googleplus-rect:before { content: '\e805'; } /* '' */
-.icon-vkontakte-rect:before { content: '\e804'; } /* '' */
-.icon-odnoklassniki:before { content: '\e806'; } /* '' */
-.icon-tumblr:before { content: '\e809'; } /* '' */
-.icon-friendfeed:before { content: '\e808'; } /* '' */
-.icon-blogger:before { content: '\e80a'; } /* '' */
-.icon-linkedin:before { content: '\e800'; } /* '' */
-.icon-diigo:before { content: '\e801'; } /* '' */
+.icon-delicious:before { content: '\e801'; } /* '' */
+.icon-hackernews:before { content: '\e800'; } /* '' */
+.icon-pinterest:before { content: '\e803'; } /* '' */
+.icon-digg:before { content: '\e806'; } /* '' */
+.icon-reddit:before { content: '\e807'; } /* '' */
+.icon-evernote:before { content: '\e808'; } /* '' */
+.icon-instapaper:before { content: '\e809'; } /* '' */
+.icon-facebook:before { content: '\e80a'; } /* '' */
+.icon-twitter:before { content: '\e80b'; } /* '' */
+.icon-stumbleupon:before { content: '\e802'; } /* '' */
+.icon-googleplus-rect:before { content: '\e80d'; } /* '' */
+.icon-vkontakte-rect:before { content: '\e80e'; } /* '' */
+.icon-odnoklassniki:before { content: '\e80f'; } /* '' */
+.icon-tumblr:before { content: '\e810'; } /* '' */
+.icon-friendfeed:before { content: '\e811'; } /* '' */
+.icon-blogger:before { content: '\e812'; } /* '' */
+.icon-linkedin:before { content: '\e804'; } /* '' */
+.icon-diigo:before { content: '\e805'; } /* '' */
+.icon-yandex:before { content: '\e80c'; } /* '' */

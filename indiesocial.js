@@ -109,6 +109,12 @@ var services = {
     'title' : '&title=',
     'fontello': 'instapaper',
     'name' : 'Instapaper'
+  },
+  'hackernews' : {
+    'URL': 'http://news.ycombinator.com/submitlink?u=',
+    'title' : '&t=',
+    'fontello': 'hackernews',
+    'name' : 'Hacker News'
   }
 };
 if (window.addEventListener) {
