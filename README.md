@@ -38,3 +38,4 @@ JavaScript library which let you use social share links without foreign scripts.
 16. Pinterest
 17. Evernote
 18. Instapaper
+19. Hacker News
