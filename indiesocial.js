@@ -137,7 +137,15 @@ function indieSocial() {
   if (!initServices) { // no initServices attribute was created, kill
     return;
   } else {
-    initServices = initServices.split(" ");
+    var seperator = "";
+    if (initServices.indexOf(", ") !== -1) {
+      seperator = ", ";
+    } else if (initServices.indexOf(",") !== -1) {
+      seperator = ",";
+    } else {
+      seperator = " ";
+    }
+    initServices = initServices.split(seperator);
   }
 
   var dataURL = init.getAttribute("data-URL");
