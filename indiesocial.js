@@ -117,44 +117,83 @@ var services = {
     'name' : 'Hacker News'
   }
 };
+
 if (window.addEventListener) {
   window.addEventListener("load", indieSocial, false);
-}
-else if(window.attachEvent) {
+} else if(window.attachEvent) {
   window.attachEvent("onload", indieSocial);
-}
-else {
+} else {
   document.addEventListener("load", indieSocial, false);
 }
+
 function indieSocial() {
-  for (var service in services) {
-		var init = document.getElementById("indiesocial-init");
-		var initServices = init.getAttribute("data-indieSocialServices");
-    if (initServices.indexOf(service) != '-1' || initServices == 'all') {
-      var aElement = document.createElement("a");
-      init.appendChild(aElement);
-      if (init.getAttribute("data-URL")) {
-        var URL = services[service]['URL'] + init.getAttribute("data-URL");
-      }
-      else {
-        var URL = services[service]['URL'] + window.location;
-      }
-      var titlelink = "";
-      if (services[service]['title'] !== undefined && init.getAttribute("data-title")) {
-        var titlelink = services[service]['title'] + init.getAttribute("data-title");
-      }
-      aElement.setAttribute("href", encodeURI(URL + titlelink));
-      aElement.setAttribute("class", "indiesocial-" + service);
-      aElement.setAttribute("title", services[service]['name']);
-      aElement.setAttribute("target", "_blank");
-      var innerValue = "";
-      if (init.getAttribute("data-addFontelloIcon") == "true") {
-        var innerValue = innerValue + '<i class="icon-' + services[service]['fontello'] + '"></i>';
-      }
-      if (init.getAttribute("data-addText") == "true") {
-        var innerValue = innerValue + services[service]['name'];
-      }
-      aElement.innerHTML = innerValue;
+
+  var init = document.getElementById("indiesocial-init");
+  if (!init) { // if no container was created kill execution
+    return; 
+  }
+
+  var initServices = init.getAttribute("data-indieSocialServices");
+  if (!initServices) { // no initServices attribute was created, kill
+    return;
+  } else {
+    var seperator = "";
+    if (initServices.indexOf(", ") !== -1) {
+      seperator = ", ";
+    } else if (initServices.indexOf(",") !== -1) {
+      seperator = ",";
+    } else {
+      seperator = " ";
     }
+    initServices = initServices.split(seperator);
+  }
+
+  var dataURL = init.getAttribute("data-URL");
+  var title = init.getAttribute("data-title");
+  var fontelloIcon = init.getAttribute("data-addFontelloIcon");
+  var addText = init.getAttribute("data-addText");
+
+  if (initServices[0] === "all") {
+    for (var serv in services) {
+      createElementService(serv);
+    }
+  } else {
+    for (var i = 0, len = initServices.length; i < len; i++) {
+      var serv = initServices[i];
+      if (serv in services) {
+        createElementService(serv);
+      }
+    }
+  }
+
+  function createElementService(service) {
+    var aElement = document.createElement("a");
+
+    if (dataURL) {
+      var URL = services[service]['URL'] + dataURL;
+    } else {
+      var URL = services[service]['URL'] + window.location;
+    }
+
+    var titlelink = "";
+    if (services[service]['title'] !== undefined && title) {
+      var titlelink = services[service]['title'] + title;
+    }
+
+    aElement.setAttribute("href", encodeURI(URL + titlelink));
+    aElement.setAttribute("class", "indiesocial-" + service);
+    aElement.setAttribute("title", services[service]['name']);
+    aElement.setAttribute("target", "_blank");
+
+    var innerValue = "";
+    if (fontelloIcon == "true") {
+      var innerValue = innerValue + '<i class="icon-' + services[service]['fontello'] + '"></i>';
+    }
+    if (addText == "true") {
+      var innerValue = innerValue + services[service]['name'];
+    }
+
+    aElement.innerHTML = innerValue;
+    init.appendChild(aElement);
   }
 }
