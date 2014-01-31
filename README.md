@@ -13,6 +13,7 @@ JavaScript library which let you use social share links without foreign scripts.
 3. Configure it.
 
 You can also install IndieSocial with [bower](http://bower.io).
+
     bower install indiesocial
 
 ## Parameters
