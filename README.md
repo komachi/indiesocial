@@ -1,16 +1,19 @@
 # IndieSocial
 JavaScript library which let you use social share links without foreign scripts. Control all your data, protect your privacy.
-* Without foreign scripts
-* Protect privacy
+* Without foreign scripts.
+* Protect privacy.
 * Easy customizable with CSS and JS.
-* Works perfectly with [Fontello](http://fontello.com/)
-* Released under CC0 License
+* Works perfectly with [Fontello](http://fontello.com/).
+* Released under CC0 License.
 * Near 1 KB minified and gzipped.
 
 ## How to use
 1. Load indiesocial.js.
 2. Place element with id="indiesocial-init" where you want see buttons.
 3. Configure it.
+
+You can also install IndieSocial with [bower](http://bower.io).
+    bower install indiesocial
 
 ## Parameters
 1. Enable social share links: data-indieSocialServices. Set to all if you want use all services.
@@ -19,7 +22,7 @@ JavaScript library which let you use social share links without foreign scripts.
 4. Set URL for share: data-URL. Default: window.location.
 5. Set title: data-title. Not work with Google+, use [OpenGraph](http://ogp.me/).
 
-## Supporting services
+## Supported services
 1. Facebook
 2. Twitter
 3. VK

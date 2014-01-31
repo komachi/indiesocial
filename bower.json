@@ -1,0 +1,38 @@
+{
+  name: 'IndieSocial',
+  main: 'indiesocial.js',
+  version: '0.1',
+  homepage: 'http://komachi.github.io/indiesocial',
+  description: 'JavaScript library which let you use social share links without foreign scripts. Control all your data, protect your privacy.',
+  keywords: [
+    'social buttons',
+    'privacy',
+    'social sharing',
+    'social networks',
+    'twitter',
+    'facebook',
+    'vk',
+    'vkontakte',
+    'odnoklassniki',
+    'google',
+    'google plus',
+    'ya.ru',
+    'friendfeed',
+    'linkedin',
+    'tumblr',
+    'blogger',
+    'diigo',
+    'reddit',
+    'delicious',
+    'digg',
+    'stumbleupon',
+    'pinterest',
+    'evernote',
+    'instapaper',
+    'hackernews'
+  ],
+  authors: [
+    'Anton Nesterov'
+  ],
+  license: 'CC0'
+}
