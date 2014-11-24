@@ -32,12 +32,6 @@ var services = {
     'fontello': 'odnoklassniki',
     'name' : 'Одноклассники'
   },
-  'yaru' : {
-    'URL': 'http://my.ya.ru/posts_add_link.xml?URL=',
-    'title' : '&title=',
-    'fontello': 'yandex',
-    'name' : 'Я.ру'
-  },
   'friendfeed' : {
     'URL': 'http://friendfeed.com/?url=',
     'title' : '&title=',
