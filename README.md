@@ -29,17 +29,16 @@ You can also install IndieSocial with [bower](http://bower.io).
 3. VK
 4. Odnoklassniki
 5. Google+
-6. Ya.ru
-7. FriendFeed
-8. LinkedIn
-9. Tumblr
-10. Blogger
-11. Diigo
-12. Reddit
-13. Delicious
-14. Digg
-15. StumbleUpon
-16. Pinterest
-17. Evernote
-18. Instapaper
-19. Hacker News
+6. FriendFeed
+7. LinkedIn
+8. Tumblr
+9. Blogger
+10. Diigo
+11. Reddit
+12. Delicious
+13. Digg
+14. StumbleUpon
+15. Pinterest
+16. Evernote
+17. Instapaper
+18. Hacker News
