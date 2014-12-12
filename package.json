@@ -2,7 +2,7 @@
   "name": "indiesocial",
   "version": "1.0.0",
   "description": "use social share links without foreign scripts",
-  "main": "indiesocial.js",
+  "main": "indiesocial.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,12 +13,40 @@
   "keywords": [
     "social",
     "sharing",
-    "privacy"
+    "privacy",
+    "twitter",
+    "facebook",
+    "vk",
+    "vkontakte",
+    "odnoklassniki",
+    "google",
+    "googleplus",
+    "friendfeed",
+    "linkedin",
+    "tumblr",
+    "blogger",
+    "diigo",
+    "reddit",
+    "delicious",
+    "digg",
+    "stumbleupon",
+    "pinterest",
+    "evernote",
+    "instapaper",
+    "hackernews"
   ],
   "author": "Anton Nesterov",
   "license": "CC0-1.0",
   "bugs": {
     "url": "https://github.com/komachi/indiesocial/issues"
   },
-  "homepage": "https://github.com/komachi/indiesocial"
+  "homepage": "https://nesterov.pw/indiesocial",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-fontello": "^0.1.3",
+    "grunt-gh-pages": "^0.9.1",
+    "grunt-jsonlint": "^1.0.4"
+  }
 }

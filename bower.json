@@ -1,7 +1,7 @@
 {
   "name": "IndieSocial",
   "main": "indiesocial.js",
-  "homepage": "http://komachi.github.io/indiesocial",
+  "homepage": "https://nesterov.pw/indiesocial",
   "description": "JavaScript library which let you use social share links without foreign scripts. Control all your data, protect your privacy.",
   "keywords": [
     "social",
@@ -13,7 +13,6 @@
     "odnoklassniki",
     "google",
     "googleplus",
-    "ya.ru",
     "friendfeed",
     "linkedin",
     "tumblr",

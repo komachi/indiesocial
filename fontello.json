@@ -1,0 +1,118 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "6975c4c656d41a0283d9c52516bf38ed",
+      "css": "delicious",
+      "code": 59404,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ef0e69c3275e8c845aca69a79900092d",
+      "css": "digg",
+      "code": 59403,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "8e04c98c8f5ca0a035776e3001ad2638",
+      "css": "facebook",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e9107949dd6c9e8ab2b29ae07156e38c",
+      "css": "linkedin",
+      "code": 59398,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "da851b7c1f84ee83f93b29ae613558dc",
+      "css": "pinterest",
+      "code": 59406,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9121e3eb89863f67c8bda378eea01a93",
+      "css": "reddit",
+      "code": 59402,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3958d12510001a1a172f088893506c27",
+      "css": "stumbleupon",
+      "code": 59405,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "43fcf807461234935e65261328e1dff6",
+      "css": "tumblr",
+      "code": 59399,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "627abcdb627cb1789e009c08e2678ef9",
+      "css": "twitter",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ce291d00162e998dbf5cb81bc5edff75",
+      "css": "evernote",
+      "code": 59408,
+      "src": "entypo"
+    },
+    {
+      "uid": "5cf33e5f0b89834df4fb10609aec90d6",
+      "css": "instapaper",
+      "code": 59407,
+      "src": "zocial"
+    },
+    {
+      "uid": "054a8f79ee2dae6c1ba909cc0c6f0cf9",
+      "css": "hackernews",
+      "code": 59409,
+      "src": "zocial"
+    },
+    {
+      "uid": "626fb97a7c0c0db53a1853fb9e96e223",
+      "css": "googleplus-rect",
+      "code": 59395,
+      "src": "brandico"
+    },
+    {
+      "uid": "5b16ceef1c8638bd5389c9302ea04098",
+      "css": "vkontakte-rect",
+      "code": 59394,
+      "src": "brandico"
+    },
+    {
+      "uid": "229e50061df526f24f1ae884fab52101",
+      "css": "odnoklassniki",
+      "code": 59396,
+      "src": "brandico"
+    },
+    {
+      "uid": "eeec90e0e80f11e1aff10800200c9a66",
+      "css": "friendfeed",
+      "code": 59397,
+      "src": "brandico"
+    },
+    {
+      "uid": "303f1f30-eda7-11e1-aff1-0800200c9a66",
+      "css": "blogger",
+      "code": 59400,
+      "src": "brandico"
+    },
+    {
+      "uid": "ca1c321a95f268ed0e54e7ba11a8264d",
+      "css": "diigo",
+      "code": 59401,
+      "src": "brandico"
+    }
+  ]
+}
