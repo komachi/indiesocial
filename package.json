@@ -1,0 +1,24 @@
+{
+  "name": "indiesocial",
+  "version": "1.0.0",
+  "description": "use social share links without foreign scripts",
+  "main": "indiesocial.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/komachi/indiesocial"
+  },
+  "keywords": [
+    "social",
+    "sharing",
+    "privacy"
+  ],
+  "author": "Anton Nesterov",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/komachi/indiesocial/issues"
+  },
+  "homepage": "https://github.com/komachi/indiesocial"
+}

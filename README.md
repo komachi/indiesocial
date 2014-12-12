@@ -12,9 +12,13 @@ JavaScript library which let you use social share links without foreign scripts.
 2. Place element with id="indiesocial-init" where you want see buttons.
 3. Configure it.
 
-You can also install IndieSocial with [bower](http://bower.io).
+You can also install IndieSocial with [bower](http://bower.io)...
 
     bower install indiesocial
+
+...or [npm](https://npmjs.org), the package manager for JavaScript
+
+    npm install indiesocial
 
 ## Parameters
 1. Enable social share links: data-indieSocialServices. Set to all if you want use all services.
