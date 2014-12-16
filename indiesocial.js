@@ -89,6 +89,7 @@ var services = {
   'pinterest' : {
     'URL': 'http://pinterest.com/pin/create/link/?url=',
     'title' : '&description=',
+    'pinmedia' : '&media=',
     'fontello': 'pinterest',
     'name' : 'Pinterest'
   },
@@ -146,6 +147,7 @@ function indieSocial() {
   var title = init.getAttribute("data-title");
   var fontelloIcon = init.getAttribute("data-addFontelloIcon");
   var addText = init.getAttribute("data-addText");
+  var pinmedia = checkImages();
 
   if (initServices[0] === "all") {
     for (var serv in services) {
@@ -156,6 +158,16 @@ function indieSocial() {
       var serv = initServices[i];
       if (serv in services) {
         createElementService(serv);
+      }
+    }
+  }
+
+  function checkImages() {
+    var allImgs = document.getElementsByTagName('img');
+    //gets first image above 400x400
+    for (var i=0; i<allImgs.length; i++) {
+      if (allImgs[i].width >= 400 && allImgs[i].height >=400) {
+        return allImgs[i].src;
       }
     }
   }
@@ -174,7 +186,12 @@ function indieSocial() {
       var titlelink = services[service]['title'] + title;
     }
 
-    aElement.setAttribute("href", encodeURI(URL + titlelink));
+    var pinimg = "";
+    if (services[service]['pinmedia'] !== undefined && pinmedia) {
+      var pinimg = services[service]['pinmedia'] + pinmedia;
+    }
+
+    aElement.setAttribute("href", encodeURI(URL + titlelink + pinimg));
     aElement.setAttribute("class", "indiesocial-" + service);
     aElement.setAttribute("title", services[service]['name']);
     aElement.setAttribute("target", "_blank");
